@@ -370,12 +370,12 @@ namespace Plugin.FirebasePushNotification
                  .SetContentTitle(title)
                  .SetContentText(message)
                  .SetAutoCancel(true)
-                 .SetWhen(Java.Lang.JavaSystem.CurrentTimeMillis())
+                 //.SetWhen(Java.Lang.JavaSystem.CurrentTimeMillis())
                  .SetContentIntent(pendingIntent);
 
             if (Build.VERSION.SdkInt >= BuildVersionCodes.JellyBeanMr1)
             {
-                notificationBuilder.SetShowWhen(showWhenVisible);
+                //notificationBuilder.SetShowWhen(showWhenVisible);
             }
 
 
